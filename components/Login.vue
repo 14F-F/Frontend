@@ -6,7 +6,7 @@
       <div class="jGQTZC">
         <label class="iJLvzO">
           <div class="fdCSlG">
-            <input class="cmCuLh" type="text" placeholder="Email address" v-model="email" />
+            <input class="cmCuLh" type="text" placeholder="Username" v-model="username" />
           </div>
         </label>
         <label class="iJLvzO">

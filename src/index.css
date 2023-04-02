@@ -4,7 +4,7 @@
 
 body {
     @apply
-    bg-[url("/src/assets/bg.png")]
+    bg-[url("/src/assets/bg2.jpg")]
     bg-cover bg-center
     text-white
     flex items-center justify-center
