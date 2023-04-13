@@ -1,40 +1,40 @@
 <template>
-  <div class="DaoRb">
-    <h1 class="eSHwvX">Sign in</h1>
+  <div>
+    <h1>Sign in</h1>
     <form @submit.prevent="login">
-      <ErrorAlert :error-msg="authError" @clearError="clearError" />
-      <div class="jGQTZC">
-        <label class="iJLvzO">
-          <div class="fdCSlG">
-            <input class="cmCuLh" type="text" placeholder="Username" v-model="username" />
+      <ErrorAlert :error-msg="authError" @clearError="clearError"/>
+      <div>
+        <label>
+          <div>
+            <input type="text" placeholder="Username" v-model="username"/>
           </div>
         </label>
-        <label class="iJLvzO">
-          <div class="fdCSlG">
-            <input class="cmCuLh" type="password" placeholder="Password" v-model="password" />
+        <label>
+          <div>
+            <input type="password" placeholder="Password" v-model="password"/>
           </div>
         </label>
       </div>
-      <div class="jGQTZC">
-        <button class="gZMQdu" type="submit" :disabled="loading">
-          <div class="bjhGPG" :class="{loading: loading}">Sign in</div>
-          <svg viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" class="jjoFVh" :class="{loading: loading}">
-            <g fill="none" stroke-width="1.5" stroke-linecap="round" class="faEWLr" style="stroke: var(--icon-color);">
+      <div>
+        <button type="submit" :disabled="loading">
+          <div :class="{loading: loading}">Sign in</div>
+          <svg viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" :class="{loading: loading}">
+            <g fill="none" stroke-width="1.5" stroke-linecap="round" style="stroke: var(--icon-color);">
               <circle stroke-opacity=".2" cx="8" cy="8" r="6"></circle>
-              <circle cx="8" cy="8" r="6" class="VFMrX"></circle>
+              <circle cx="8" cy="8" r="6"></circle>
             </g>
           </svg>
         </button>
-        <NuxtLink to="/forgot-password" class="fTZPOV">Forgot your password?</NuxtLink>
+        <RouterLink to="/forgot-password">Forgot your password?</RouterLink>
       </div>
     </form>
-    <div class="jGQTZC">
-      <p class="dEDhcH">Don’t have a SupaAuth account?</p>
-      <NuxtLink to="/register">
-        <button class="lcqpaS">
-          <div class="bjhGPG">Create new account</div>
+    <div>
+      <p>Don’t have a SupaAuth account?</p>
+      <RouterLink to="/register">
+        <button>
+          <div>Create new account</div>
         </button>
-      </NuxtLink>
+      </RouterLink>
     </div>
   </div>
 </template>

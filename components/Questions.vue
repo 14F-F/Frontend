@@ -91,11 +91,11 @@ export default {
             return scores;
         },
         getSounds() {
-            this.game.sounds.play = new Audio("https://www.soundboard.com/handler/DownLoadTrack.ashx?cliptitle=lets+play!&filename=22/226000-d8c5d02e-e2d8-4552-a34f-ee006709e7b3.mp3");
-            this.game.sounds.bg = new Audio("https://www.soundboard.com/handler/DownLoadTrack.ashx?cliptitle=1000000+music&filename=22/226000-d812f5cc-04ab-4858-9045-00731ef1f3f3.mp3");
-            this.game.sounds.final = new Audio("https://www.soundboard.com/handler/DownLoadTrack.ashx?cliptitle=final+answer&filename=22/226000-99ef9794-cc3e-46b1-ab80-0a5ff96a0639.mp3");
-            this.game.sounds.correct = new Audio("https://www.soundboard.com/handler/DownLoadTrack.ashx?cliptitle=correct+answer!&filename=22/226000-40bfdd88-c10f-4f75-99af-8569db18de8e.mp3");
-            this.game.sounds.wrong = new Audio("https://www.soundboard.com/handler/DownLoadTrack.ashx?cliptitle=wrong+answer&filename=22/226000-9027b0d6-7a4f-4ee7-946f-6d011370681f.mp3");
+            this.game.sounds.play = new Audio("");
+            this.game.sounds.bg = new Audio("");
+            this.game.sounds.final = new Audio("");
+            this.game.sounds.correct = new Audio("");
+            this.game.sounds.wrong = new Audio("");
         },
         choice(c) {
             this.stopSounds();
