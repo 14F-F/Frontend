@@ -1,19 +1,19 @@
 import { defineStore } from "pinia";
 
-export const useAutoVoteStore = defineStore({
-    id: 'autoVoteStore',
+export const useCategoryStore = defineStore({
+    id: 'categoryStore',
     state: ()=>({ 
-        kivAuto: -1
+        selCategory: -1
      }),
     getters:{
-        getAuto(state){
+        getCategory(state){
             
-            return state.kivalasztottAuto;
+            return state.selectedCategory;
         },
     },
     actions:{
-        autoKivalasztas(kivalasztottAuto){
-            this.kivAuto = kivalasztottAuto
+        categorySelecting(selectedCategory){
+            this.selCategory = selectedCategory
         }
     }
 });
