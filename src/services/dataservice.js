@@ -2,26 +2,55 @@ import Axios from 'axios';
 Axios.defaults.baseURL = 'http://45.67.159.35:3000/api/edutron';
 
 export default {
-    getGyartok(tableName){
+    getAll(tableName){
         return Axios.get(`/getAll/${tableName}`)
     },
-    getAutok(){
-        return Axios.get('/api/cars')
+    createTest(test){
+        return Axios.post('/createTest',test)
     },
-    getGyartoAutoi(manufacturerid){
-        return Axios.get(`/api/cars/${manufacturerid}`)
+    createQuestion(question){
+        return Axios.post(`/createQuestion`,question)
     },
-    postVote(vote){
-        console.log(vote);
-        return Axios.post('/api/vote',vote);
+    createAnswer(answer){
+        return Axios.post('/createAnswer',answer);
     },
-    getUserById(id){
-        return Axios.get(`/users/${id}`)
+    addTQID(TQUID){
+        return Axios.post('/addTQID', TQUID)
     },
-    saveUser(user){
-        return Axios.post('/users',user);
+    addQAID(QAID){
+        return Axios.post('/addQAID', QAID)
     },
-    updateUser(user,id){
-        return Axios.put(`/users/${id}`,user);
+    updateTest(test,id){
+        return Axios.put(`/updateTest/${id}`,test)
+    },
+    updateQuestion(question,id){
+        return Axios.put(`/updateQuestion/${id}`,question);
+    },
+    updateAnswer(answer,id){
+        return Axios.put(`/updateAnswer/${id}`,answer);
+    },
+    deleteTest(id){
+        return Axios.delete(`/deleteTest/${id}`)
+    },
+    deleteQuestion(id){
+        return Axios.delete(`/deleteQuestion/${id}`)
+    },
+    deleteAnswer(id){
+        return Axios.delete(`/deleteAnswer/${id}`)
+    },
+
+    //User 
+
+    register(user){
+        return Axios.post(`/register`, user)
+    },
+    updateUser(user, id){
+        return Axios.put(`/updateUser/${id}`, user)
+    },
+    deleteUser(id){
+        return Axios.delete(`/deleteUser/${id}`)
+    },
+    loggedIn(user){
+        return Axios.post(`/loggedIn`, user)
     }
 }
