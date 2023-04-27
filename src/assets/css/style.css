@@ -1,0 +1,16 @@
+body{
+    text-align: center;
+}
+form{
+    display: inline-block;
+}
+.left{
+    position: absolute !important;
+    left: 80% !important;
+}
+h1{
+    float: left;
+}
+.container{
+    margin-left: 5% !important;
+}
